@@ -1,7 +1,7 @@
 NAME = fractol
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -I./minilibx
-MLX = -L./minilibx -lmlx -framework OpenGL -framework AppKit
+MLX = -L./minilibx -lmlx -lX11 -lXext -lm
 SRCS = main.c render.c events.c init_mlx.c
 OBJS = $(SRCS:.c=.o)
 
